@@ -4,10 +4,10 @@ def hash(value):
   hashed = []
   for i in value[::-1]:
        print(i)
-       hashed.append((ord(i)+(random.randint(1,100))))
+       hashed.append((ord(i)) + 10)
   print(hashed)
   for i in hashed:
-    hashedd = i + hashedd
+    hashedd = i + hashedd + 58
   return hashedd
  
 print(hash(input("Enter string to be hashed:")))
